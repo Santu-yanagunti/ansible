@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  remote_user: root
+  become: yes
+  tasks:
+   - include: install.yml
+   - include: service.yml
